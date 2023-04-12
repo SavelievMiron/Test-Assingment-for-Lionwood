@@ -25,7 +25,10 @@ and focus on the backend code and the interaction between the js and the PHP bac
 Please provide us with an estimation of the hours. And after approval with the client, we will notify you when you can start completing the assignment
 
 ## Solution
+The authentication system has been built on JWT token with the help of php library [lexik/jwt-authentication-bundle](https://github.com/lexik/LexikJWTAuthenticationBundle). React is used for login and registration forms.
+The project has only one private page -- Dashboard. Also, the application is stateless so no session is created after login.
 
+I used docker to comfortably deploy the project on local machine.
 
 ## Installation
 
