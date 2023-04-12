@@ -26,7 +26,7 @@ Please provide us with an estimation of the hours. And after approval with the c
 
 ## Solution
 The authentication system has been built on JWT token with the help of php library [lexik/jwt-authentication-bundle](https://github.com/lexik/LexikJWTAuthenticationBundle). React is used for login and registration forms.
-The project has only one private page -- Dashboard. Also, the application is stateless so no session is created after login.
+The project has only one private page accessible by authenticated users -- Dashboard. Also, the application is stateless so no session is created after login.
 
 I used docker to comfortably deploy the project on local machine.
 
@@ -37,7 +37,7 @@ I used docker to comfortably deploy the project on local machine.
 composer install
 npm install
 ```
-3. Build front-end assets (the version of NodeJS > 18)
+3. Build front-end assets (the version of NodeJS >= 18)
 ```
 npm run build
 ```
