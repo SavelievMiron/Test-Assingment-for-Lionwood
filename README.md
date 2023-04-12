@@ -23,3 +23,27 @@ Make the application appearance as simple as possible design-wise (don’t waste
 and focus on the backend code and the interaction between the js and the PHP backend.
 
 Please provide us with an estimation of the hours. And after approval with the client, we will notify you when you can start completing the assignment
+
+## Solution
+
+
+## Installation
+
+1. Install php and js dependencies
+```
+composer install
+npm install
+```
+3. Build front-end assets (the version of NodeJS > 18)
+```
+npm run build
+```
+4. Run docker
+```
+docker-compose up --build
+```
+5. Run database migrations
+```
+docker-compose run --rm web php bin/console doctrine:migrations:migrate
+```
+6. Visit [http://localhost:8080/](http://localhost:8080/)
